@@ -9,10 +9,6 @@ class Song
   extend Findable
   @@songs = []
 
-  def initialize
-    self.all << self
-  end
-
   def artist=(artist)
     @artist = artist
   end
