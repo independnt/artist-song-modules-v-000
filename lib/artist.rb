@@ -4,8 +4,8 @@ class Artist
   attr_accessor :name
   attr_reader :songs
 
-  include Paramable
-  extend Memorable
+  include Memorable::InstanceMethods
+  extend Memorable::ClassMethods
   extend Findable
   @@artists = []
 
